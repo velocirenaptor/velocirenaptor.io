@@ -2,18 +2,18 @@
 
 <table border="0">
 
-    <ul *ngFor="let escola of education">
+    <ul *ngFor="let escola of education" class="escola">
         <li>
             <tr>
                 <td>
                     {{escola.institucion}}
                 </td>
-                <td>
-                    {{escola.generacion}}
-                </td>
             </tr>
             <tr>
-                <td>{{escola.ubicacion}} </td>
+                <td>
+                    {{escola.ubicacion}}
+                </td>
+                <td>{{escola.generacion}} </td>
             </tr>
         </li>
     </ul>

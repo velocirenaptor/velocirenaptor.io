@@ -18,12 +18,39 @@ export class WorkExperienceComponent {
       logros: [
         {
           descripcion: "Diseño de front-end en una tienda en línea tipo e-commerce."
+        },
+        {
+          descripcion: "Modelado de una página web funcional."
+        },
+        {
+          descripcion: "Desarrollo de logística en un website e-commerce."
         }
+
       ]
     }
   ];
 
-  constructor() {
+  ngOnInit(): void {
+    const trabajo2 = {
+      fecha: "Abril 2024-Junio 2024",
+      ubicacion: "Orizaba, Ver.",
+      ocupacion: "Subjefe",
+      logros: [
+        {
+          descripcion: "Planeación de proyecto de una website."
+        },
+        {
+          descripcion: "Estructuración de proceso de desarrollo y modelado del trabajo. "
+        },
+        {
+          descripcion: "Administrador del proyecto, correcciones, moderación. "
+        }
+      ]
+    };
+
+
+  this.workExperience.push(trabajo2);
+
     console.log(this.workExperience);
-  }
+}
 }
