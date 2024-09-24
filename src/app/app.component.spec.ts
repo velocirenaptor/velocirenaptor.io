@@ -24,14 +24,14 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, mycv');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Renata Mota');
   });
 
   xit('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, mycv')
+    expect(compiled.querySelector('h1')?.textContent).toContain('Renata Mota')
   }
 
   )
