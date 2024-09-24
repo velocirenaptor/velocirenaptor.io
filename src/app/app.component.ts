@@ -16,5 +16,5 @@ import { ContactComponent } from './contact/contact.component';
 })
 
 export class AppComponent {
-  title = 'Hello, mycv';
+  title = 'Renata Mota';
 }
