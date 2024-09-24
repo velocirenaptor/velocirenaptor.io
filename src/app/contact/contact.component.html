@@ -1,0 +1,8 @@
+<div class="contact-container">
+    <div class="contact-details" *ngFor="let contact of contacts">
+        <img [src]="contact.icon" alt="{{contact.method}} icon" class="contact-icon">
+        <div class="contact-info">
+            <span><strong>{{contact.method}}:</strong> {{contact.value}}</span>
+        </div>
+    </div>
+</div>

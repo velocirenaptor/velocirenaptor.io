@@ -1,15 +1,23 @@
-<table border="1">
-  <tr>
-    <td colspan="2">
-      <app-header></app-header>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <app-work-experience> </app-work-experience>
-    </td>
-    <td>
-      <app-education></app-education>
-    </td>
-  </tr>
-</table>
+<div class="container">
+  <app-header></app-header>
+  <div class="divider"></div>
+  <div class="content">
+      <div class="row">
+          <div class="column">
+              <app-work-experience></app-work-experience>
+          </div>
+          <div class="column">
+              <app-education></app-education>
+          </div>
+      </div>
+      <div class="row">
+          <div class="column full-width">
+              <app-about></app-about>
+          </div>
+          <div class="column full-width">
+              <app-interests></app-interests>
+          </div>
+      </div>
+      <app-contact></app-contact>
+  </div>
+</div>
