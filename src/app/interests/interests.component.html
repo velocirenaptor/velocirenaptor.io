@@ -1,0 +1,13 @@
+<h3>
+    Intereses
+</h3>
+<div class="interests-container">
+    <div class="interests-list">
+      <span *ngFor="let interest of interests" class="interest-item">
+        <img [src]="interest.icon" alt="{{ interest.hobby }}" class="icon" />
+        {{ interest.hobby }}
+      </span>
+    </div>
+  </div>
+  
+  
