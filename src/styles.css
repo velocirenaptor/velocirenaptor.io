@@ -1,11 +1,1 @@
-body, html {
-    margin: 0;
-    background-image: url('https://firebasestorage.googleapis.com/v0/b/cv-act1.appspot.com/o/FountainOfDreams.jpg?alt=media&token=87a82f83-704e-48ff-8349-6dfb8fa6c90e');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10%;
-  }
+/* You can add global styles to this file, and also import other style files */
