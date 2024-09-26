@@ -1,4 +1,4 @@
-name: release CI_CD
+name: Release CI_CD
 on: 
   push:
     branches: [ "release"]
