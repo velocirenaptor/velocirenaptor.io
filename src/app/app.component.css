@@ -1,37 +1,49 @@
+body {
+  margin: 0; /* Elimina los márgenes por defecto del navegador */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;    /* <-- ¡FALTA ESTO! Centra verticalmente y crea espacio arriba/abajo */
+  background-color: #121019; 
+}
 
+/* 2. Tu contenedor centrado y mejorado */
 .container {
-  background-color: rgba(3, 2, 10, 0.959);
-  padding: 20px;
-  width: 70%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
-  height: 90%;
+  background-color: rgba(3, 2, 10, 0.736);
+  height: 80%; /* Ajusta automáticamente la altura según el contenido */
+  width: 80%;
+  max-width: 1200px; /* Evita que crezca demasiado en pantallas ultra-anchas */
+  padding: 2.5rem;   /* Cambiado de 200px a algo más razonable (aprox 40px) */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.574);
+  border-radius: 12px; /* Opcional: le da un toque moderno con esquinas redondeadas */
+  box-sizing: border-box; /* Asegura que el padding no rompa el ancho/alto */
 }
 
 .divider {
   height: 2px;
   background-color: #5e53c4; 
-  margin: 20px 0; 
+  margin: 1.25rem 0; 
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  
+  gap: 15px; /* Espacio limpio entre filas */
 }
 
 .row {
   display: flex;
   justify-content: space-between; 
+  gap: 20px; /* Espacio limpio entre columnas en lugar de usar márgenes laterales */
   margin: 10px 0; 
 }
 
 .column {
   flex: 1; 
-  margin: 0 10px;
+  /* Se eliminó el 'margin: 0 10px' gracias al uso de 'gap' en .row */
 }
-
 
 .full-width {
   flex-basis: 100%;

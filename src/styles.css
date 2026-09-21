@@ -1,11 +1,10 @@
 body, html {
     margin: 0;
-    background-image: url('https://firebasestorage.googleapis.com/v0/b/cv-act1.appspot.com/o/FountainOfDreams.jpg?alt=media&token=87a82f83-704e-48ff-8349-6dfb8fa6c90e');
+    background-image: url('https://res.cloudinary.com/dd9lx460j/image/upload/v1789968613/bd764bb25d49a05105060185774ba14cd2c846f7_eu17ij.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 10%;
   }

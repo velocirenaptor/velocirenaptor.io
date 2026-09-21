@@ -1,23 +1,39 @@
 h3 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 25px;
+    font-size: 10px;
     color: white;
+    text-align: center; /* Centramos también el título opcionalmente */
 }
 
+/* Contenedor principal centrado a lo ancho */
 .remarks-button {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; 
+    justify-content: center; /* Centra toda la lista horizontalmente en la pantalla */
+    align-items: center;     /* Alinea verticalmente los elementos */
+    gap: 12px;               /* Espacio base de separación */
+    padding: 10px 0;
 }
 
+/* Estilo de cada elemento de la lista */
 .remarks-span {
-    align-content: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #ffffff;
-    margin: 10px 0;
-    background: linear-gradient(to bottom right, rgba(99, 100, 201, 1), rgb(188, 105, 255));
-    padding:10px;
+    padding: 8px 16px;
     border-radius: 30px; 
-    width: 130px;
     text-align: center;
+    /* Quitamos el ancho fijo (width: 130px) para que se adapten al texto de forma fluida */
+    min-width: 100px; 
+}
+
+/* Magia para agregar el símbolo separador entre los elementos (excepto el último) */
+.remarks-span:not(:last-child)::after {
+    content: "•";            /* Puedes cambiar "•" por "·", "/", "|" o el símbolo que prefieras */
+    margin-left: 12px;       /* Distancia entre el elemento y el símbolo */
+    color: #8c82ff;          /* Color llamativo o tenue para el separador */
+    font-size: .5rem;
+    font-weight: bold;
 }

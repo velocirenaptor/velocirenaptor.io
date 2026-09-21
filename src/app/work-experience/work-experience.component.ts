@@ -51,6 +51,26 @@ export class WorkExperienceComponent {
 
   this.workExperience.push(trabajo2);
 
+    const trabajo3 = {
+      fecha: "Julio 2025 - Mayo 2026",
+      ubicacion: "Remoto",
+      ocupacion: "Intérprete médico inglés-español.",
+      logros: [
+        {
+          descripcion: "Facilitar la comunicación entre pacientes y profesionales de la salud en entornos médicos."
+        },
+        {
+          descripcion: "Interpretar de manera precisa y efectiva la información médica entre el inglés y el español."
+        },
+        {
+          descripcion: "Garantizar la confidencialidad y la ética en la interpretación médica."
+        }
+      ]
+    };
+
+
+  this.workExperience.push(trabajo3);
+
     console.log(this.workExperience);
 }
 }
